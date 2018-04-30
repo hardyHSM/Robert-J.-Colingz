@@ -1,0 +1,115 @@
+.info {
+  background-color: $accent-color;
+  color: $dark-color;
+  padding-top: 125px;
+  padding-bottom: 125px;
+}
+
+.info__title {
+  @extend .no-gutters;
+  font-size: 40px;
+  font-family: $main-font_black;
+  margin-bottom: 35px;
+}
+
+.info__img {
+  width: 400px;
+  height: 400px;
+}
+
+.info__preview {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.info__social-list {
+  position: absolute;
+  bottom: 18px;
+  right: 18px;
+}
+
+.info__left {
+  width: 400px;
+  flex-shrink: 0;
+  margin-right: 170px;
+}
+
+.info__right {
+  flex-grow: 1;
+}
+.info__content {
+  @include flex($wrap: nowrap);
+}
+
+.info__descr {
+  @extend .no-gutters;
+  font-size: 16px;
+  color: $dark-color;
+  font-family: $main-font_light;
+  line-height: 1.6;
+}
+
+.info__subtitle {
+  @extend .no-gutters;
+  display: inline-block;
+  margin-bottom: 70px;
+  font-size: 31px;
+}
+
+.ability-list {
+  @extend .no-gutters;
+  list-style-type: none;
+}
+
+.ability-list__item {
+  margin-bottom: 50px;
+  display: block;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  &_modeling {
+    background-size: 68px 68px;
+    background-image: url('../img/icons/excel.png');
+  }
+  &_advising {
+    background-size: 47px 68px;
+    background-image: url('../img/icons/bulb.png');
+  }
+  &_managemeny {
+    background-size: 60px 60px;
+    background-image: url('../img/icons/money.png');
+  }
+  &_traning {
+    background-size: 73px 73px;
+    background-image: url('../img/icons/classroom.png');
+  }
+}
+
+.ability-list__content {
+  padding-left: 100px;
+}
+
+.ability-list__title {
+  @extend .no-gutters;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+
+.aility-list__descr {
+  @extend .no-gutters;
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: $main-font_light;
+}
+
+
+
+
+
+
+
+
+
+
+

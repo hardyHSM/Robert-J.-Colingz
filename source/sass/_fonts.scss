@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'Roboto Light';
+  src: url('../fonts/Roboto/Roboto-Light.woff2') format('woff2'),
+  url('../fonts/Roboto/Roboto-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Medium';
+  src: url('../fonts/Roboto/Roboto-Medium.woff2') format('woff2'),
+  url('../fonts/Roboto/Roboto-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Black';
+  src: url('../fonts/Roboto/Roboto-Black.woff2') format('woff2'),
+  url('../fonts/Roboto/Roboto-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto/Roboto-Regular.woff2') format('woff2'),
+  url('../fonts/Roboto/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url('../fonts/Roboto/Roboto-Bold.woff2') format('woff2'),
+  url('../fonts/Roboto/Roboto-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('../fonts/MyriadPro/MyriadPro-Regular.woff2') format('woff2'),
+  url('../fonts/MyriadPro/MyriadPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/webfonts/fa-brands-400.eot');
+  src: url('../fonts/webfonts/fa-brands-400.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/webfonts/fa-brands-400.woff2') format('woff2'),
+  url('../fonts/webfonts/fa-brands-400.woff') format('woff'),
+  url('../fonts/webfonts/fa-brands-400.ttf') format('truetype'),
+  url('../fonts/webfonts/fa-brands-400.svg#fontawesome') format('svg');
+}
+
+
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/webfonts/fa-solid-900.eot');
+  src: url('../fonts/webfonts/fa-solid-900.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/webfonts/fa-solid-900.woff2') format('woff2'),
+  url('../fonts/webfonts/fa-solid-900.woff') format('woff'),
+  url('../fonts/webfonts/fa-solid-900.ttf') format('truetype'),
+  url('../fonts/webfonts/fa-solid-900.svg#fontawesome') format('svg');
+}
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/webfonts/fa-regular-400.eot');
+  src: url('../fonts/webfonts/fa-regular-400.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/webfonts/fa-regular-400.woff2') format('woff2'),
+  url('../fonts/webfonts/fa-regular-400.woff') format('woff'),
+  url('../fonts/webfonts/fa-regular-400.ttf') format('truetype'),
+  url('../fonts/webfonts/fa-regular-400.svg#fontawesome') format('svg');
+}

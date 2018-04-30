@@ -1,0 +1,254 @@
+.main-header {
+  min-height: 900px;
+  width: 100%;
+  position: relative;
+}
+
+.main-header__left, .main-header__right {
+  height: 100%;
+  width: 50%;
+  padding-bottom: 140px;
+  padding-top: 45px;
+  @include flex($dir: col);
+}
+
+.main-header__left {
+  padding-right: 90px;
+  .main-header__container {
+    margin-left: auto;
+  }
+}
+
+.main-header__right {
+  padding-left: 90px;
+  .main-header__container {
+    margin-right: auto;
+  }
+}
+
+.investment {
+  background-image: url('../img/background/intro-investment.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.travel {
+  background-image: url('../img/background/intro-travel.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.main-header {
+  @include flex();
+  font-family: $main-font;
+  color: $light-color;
+}
+
+.main-header__container {
+  width: 500px;
+}
+
+.main-header__title {
+  @extend .no-gutters;
+  font-size: 40px;
+  color: $accent-color;
+  font-family: $main-font_black;
+  margin-bottom: 420px;
+  margin-top: auto;
+}
+
+.investment__title {
+  @extend .no-gutters;
+  font-size: 56px;
+  font-family: $main-font_black;
+  margin-bottom: 25px;
+}
+
+.investment__descr {
+  @extend .no-gutters;
+  font-size: 24px;
+  line-height: 1.7;
+  margin-bottom: 55px;
+}
+
+.inverstment__link {
+  font-size: 24px;
+  font-family: $main-font_black;
+  color: $accent-color;
+  transition: all .3s;
+  &:hover {
+    color: $white-color;
+    &::after {
+      background-color: $accent-color;
+    }
+  }
+}
+
+// TRAVEL
+
+.travel {
+  text-align: right;
+}
+
+.travel__title {
+  @extend .investment__title;
+}
+
+.travel__desc {
+  @extend .investment__descr;
+}
+
+.travel__link {
+  @extend .inverstment__link;
+  padding-bottom: 10px;
+  border-bottom: 4px solid $accent-color;
+}
+
+// MENU BUTTON
+
+.menu-button {
+  cursor: pointer;
+  box-shadow: -8px 8px 20px 0px rgba(0,0,0,0.3);
+  width: 40px;
+  height: 65px;
+  background-color: $white-color;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 32px;
+  z-index: 150;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 65px;
+    border-radius: 50%;
+    z-index: 151;
+    background-color: $white-color;
+  }
+}
+
+.menu-button__body {
+  @extend .no-gutters;
+  border: 0;
+  z-index: 152;
+  background-color: transparent;
+  outline: 0;
+  position: absolute;
+  width: 24px;
+  height: 18px;
+  @include top-align();
+  span {
+    width: 24px;
+    height: 3px;
+    background-color: $dark-color;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    &:nth-child(1) {
+      top: 0;
+    }
+    &:nth-child(2) {
+      top: 8px;
+    }
+    &:nth-child(3) {
+      top: 16px;
+    }
+  }
+}
+
+.menu-button_active {
+  right: 255px;
+  .menu-button__body {
+    span:nth-child(2) {
+      display: none;
+    }
+    span:nth-child(1) {
+      top: 8px;
+      transform: rotate(45deg);
+    }
+    span:nth-child(3) {
+      top: 8px;
+      transform: rotate(-45deg);
+    }
+  }
+  .menu-button__nav {
+    display: block;
+  }
+}
+
+
+.menu-button__nav {
+  position: absolute;
+  left: 35px;
+  display: none;
+
+}
+
+// MAIN _NAV
+
+.main-navigation {
+  border-radius: 6px 0px 0px 6px;
+  min-width: 260px;
+  background-color: $white-color;
+}
+
+
+
+.main-navigation__list {
+  @extend .no-gutters;
+  list-style-type: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.main-navigation__item {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.main-navigation__link {
+  color: $text-accent-color;
+  font-size: 20px;
+  font-family: $main-font;
+  &::after {
+    width: 0;
+    left: 15px;
+    transition: .3s linear;
+    background-color: $accent-color;
+  }
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

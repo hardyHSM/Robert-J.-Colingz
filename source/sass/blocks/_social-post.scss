@@ -1,0 +1,86 @@
+.social-post-section {
+  padding: 84px 0px;
+  background-color: $light-color;
+  color: $text-accent-color;
+}
+
+.social-post {
+  color: $text-accent-color;
+  width: 320px;
+  margin-right: 100px;
+  user-select: none !important;
+  padding: 15px;
+  transition: all .3s linear;
+  &:focus, &:active, &:hover {
+    outline: none;
+    box-shadow: 0 0 9px 0px rgba(0, 0, 0, 0.39);
+  }
+}
+
+.social-post-section__list {
+  padding: 15px;
+}
+
+.social-post__header {
+  padding-top: 50px;
+  @include flex($jc:sb);
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.social-post__type-descr {
+  font-size: 20px;
+  font-family: $main-font_black;
+}
+
+.social-post__content {
+  @extend .no-gutters;
+  font-size: 16px;
+  font-family: $main-font_light;
+  line-height: 1.5;
+}
+
+.social-post__icon {
+  @extend .fab;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 25px;
+}
+
+.social-post__icon_twitter {
+  @extend .fa-twitter;
+}
+
+.social-post__icon_facebook {
+  @extend .fa-facebook-f;
+}
+
+.social-post__icon_linkedin {
+  @extend .fa-linkedin-in;
+}
+
+.social-post-section__slider {
+  .slick-slide {
+    height: auto;
+  }
+  .slick-track {
+    display: flex;
+    padding: 15px;
+  }
+  .slick-dots {
+    li {
+      width: 13px;
+      height: 13px;
+      border: 1px solid $dark-color;
+      border-radius: 50%;
+      margin: 0px 10px;
+    }
+    button:before {
+      display: none;
+    }
+    .slick-active {
+      background-color: $dark-color;
+    }
+  }
+}

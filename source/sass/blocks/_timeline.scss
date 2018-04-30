@@ -1,0 +1,77 @@
+.timeline {
+  padding-top: 128px;
+  padding-bottom: 128px;
+  background-color: $dark-color;
+  color: $light-color;
+  background-image: url('../img/background/business-man.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.timeline__title {
+  font-size: 30px;
+  color: $accent-color;
+  font-family: $main-font_bold;
+  display: inline-block;
+}
+
+.timeline-slider__preview {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  font-size: 80px;
+  color: $accent-color;
+  text-transform: uppercase;
+  font-family: $main-font_bold;
+}
+
+.timeline__content {
+  @include flex($jc: sb, $wrap: nowrap);
+}
+
+.timeline__left {
+  flex-shrink: 0;
+  width: 585px;
+  margin-right: 105px;
+}
+
+.timeline__right {
+  flex-grow: 1;
+}
+
+.alcoa__preview {
+  margin-bottom: 28px;
+  display: block;
+}
+
+.alcoa__title {
+  font-size: 25px;
+  font-family: $main-font_bold;
+  color: $accent-color;
+  margin-bottom: 18px;
+}
+
+.alcoa__subtitle {
+  font-size: 23px;
+  font-family: $main-font;
+  color: $light-color;
+  margin-bottom: 40px;
+}
+
+.alcoa__descr {
+  font-size: 20px;
+  font-family: $main-font_light;
+  line-height: 1.8;
+  opacity: 0.9;
+  margin-bottom: 35px;
+}
+
+.alcoa__link {
+  font-family: $main-font_bold;
+  color: $accent-color;
+  font-size: 20px;
+}
+
+
+

@@ -1,0 +1,71 @@
+.progress {
+  color: $dark-color;
+  padding: 95px 0px;
+}
+
+
+.progress__list {
+  @extend .no-gutters;
+  list-style-type: none;
+  @include flex($jc: sb, $wrap: nowrap);
+}
+
+.progress__item {
+  width: 230px;
+  flex-grow: 0;
+  text-align: center;
+  padding-top: 115px;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  &_bfm {
+    background-image: url('../img/icons/medal.png');
+  }
+  &_students {
+    background-image: url('../img/icons/student.png');
+  }
+  &_subscriber {
+    background-image: url('../img/icons/login-as-user.png');
+  }
+  &_places{
+    background-image: url('../img/icons/footprint.png');
+  }
+}
+
+.progress__subtitle {
+  display: block;
+  font-family: $main-font_bold;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.progress__descr {
+  font-family: $main-font_light;
+  font-size: 16px;
+  @extend .no-gutters;
+  line-height: 1.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
